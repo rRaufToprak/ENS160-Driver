@@ -18,11 +18,11 @@
 
 /*----------------------ENS160 Register Defines---------------*/
 #define ENS160_PART_ID																	0x00
-#define ENS160_OPMODE																		0x10
-#define ENS160_CONFIG																		0x11
+#define ENS160_OPMODE																	0x10
+#define ENS160_CONFIG																	0x11
 #define ENS160_COMMAND																	0x12
 #define ENS160_TEMP_IN																	0x13
-#define ENS160_RH_IN																		0x15
+#define ENS160_RH_IN																	0x15
 #define ENS160_DEV_STATUS																0x20
 #define ENS160_DATA_AQI																	0x21
 #define ENS160_DATA_TVOC																0x22
@@ -30,14 +30,14 @@
 #define ENS160_DATA_TEMP																0x30
 #define ENS160_DATA_RH																	0x32
 #define ENS160_DATA_MISR																0x38
-#define ENS160_GPR_WRITE															  0x40
+#define ENS160_GPR_WRITE																0x40
 #define ENS160_GPR_READ																	0x48
 /*----------------------ENS160 Command definitions---------------*/
 typedef enum{
 	DEEP_SLEEP_MODE = 0x00,
-	IDLE_MODE				= 0x01,
-	STANDARD_MODE		= 0x02,
-	RESET_MODE			= 0xF0
+	IDLE_MODE	= 0x01,
+	STANDARD_MODE	= 0x02,
+	RESET_MODE      = 0xF0
 }ENS160_OpModeCommand;
 /*----------------------ENS160 Data Structure--------------------*/
 typedef struct {
